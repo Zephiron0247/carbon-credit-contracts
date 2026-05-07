@@ -1,13 +1,38 @@
-# Sample Hardhat Project
+# Pranaq — Smart Contracts
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+Solidity smart contracts powering blockchain-based carbon credit issuance.
 
-Try running some of the following tasks:
+---
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+# Features
+
+- ERC-20 carbon credit token
+- Verification-linked minting
+- Duplicate mint prevention
+- Sepolia deployment
+
+---
+
+# Stack
+
+- Solidity
+- Hardhat
+- OpenZeppelin
+- Sepolia Testnet
+
+---
+
+# Contract
+
+| Contract | Purpose |
+|---|---|
+| CarbonCredit.sol | Carbon credit token + issuance logic |
+
+---
+
+# Deploy
+
+```bash
+npm install
+npx hardhat compile
+npx hardhat run scripts/deploy.js --network sepolia
